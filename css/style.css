@@ -1,0 +1,235 @@
+body{
+  font-family: sans-serif;
+}
+.container{
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.btn-custom{
+  --btnSize: 0.75rem 2rem;
+  --bgColor: #ffffff;
+  --bgHover: #ffffff;
+  --bgActive: #ffffff;
+  
+  
+  display: inline-block;
+  position: relative;
+  background-color: var(--bgColor);
+  padding: var(--btnSize);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*Red button*/
+.btn-custom.btn-red{
+  --bgColor: #E81313;
+  --bgHover: #d11111;
+  --bgActive: #ae0e0e;
+  background-color: var(--bgColor);
+}
+
+
+/*Yellow button*/
+.btn-custom.btn-yellow{
+  --bgColor: #f8d62a;
+  --bgHover: #dfc126;
+  --bgActive: #baa120;
+  background-color: var(--bgColor);
+}
+
+
+/*Green button*/
+.btn-custom.btn-green{
+  --bgColor: #13E89D;
+  --bgHover: #0FB97D;
+  --bgActive: #0B8A5D;
+  background-color: var(--bgColor);
+}
+
+/*Blue button*/
+.btn-custom.btn-blue{
+  --bgColor: #138FE8;
+  --bgHover: #0F72B9;
+  --bgActive: #0B558A;
+  background-color: var(--bgColor);
+}
+
+/*Dark button*/
+.btn-custom.btn-dark{
+  --bgColor: #333333;
+  --bgHover: #262626;
+  --bgActive: #0D0D0D;
+  background-color: var(--bgColor);
+}
+
+/*Pink button*/
+.btn-custom.btn-pink{
+  --bgColor: #C247FF;
+  --bgHover: #B114FF;
+  --bgActive: #9600E0;
+  
+  background-color: var(--bgColor);
+}
+
+/*Outlined button*/
+.btn-custom.btn-outlined{
+  background-color: transparent;
+  border-color: var(--bgHover);
+  color: var(--bgHover);
+}
+.btn-custom.btn-outlined.btn-bordered{
+  background-color: var(--bgColor);
+  border: 2px solid var(--bgActive);
+  color: #ffffff;
+}
+.btn-custom.btn-hover:hover{
+  background-color: var(--bgHover);
+  color: #ffffff;
+}
+.btn-custom.btn-active:active{
+  background-color: var(--bgActive);
+  color: #ffffff;
+}
+
+
+.btn-custom.btn-outlined.btn-flip{
+  overflow: hidden;
+  transition: color 0.2s linear 0.1s;
+}
+.btn-custom.btn-outlined.btn-flip:not(.btn-modern)::before{
+  position: absolute;
+  content: '';
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bgHover);
+  transition: all 0.2s linear;
+  z-index: -1;
+}
+
+.btn-custom.btn-outlined.btn-flip.btn-pill::before{
+  border-radius: 50px;
+}
+.btn-custom.btn-outlined.btn-flip.btn-flip-left::before{
+  top: 0;
+  left: -100%;
+}
+.btn-custom.btn-outlined.btn-flip.btn-flip-right::before{
+  top: 0;
+  left: 100%;
+}
+.btn-custom.btn-outlined.btn-flip.btn-flip-bottom::before{
+  top: 100%;
+  left: 0;
+}
+
+.btn-custom.btn-outlined.btn-flip:not(.btn-modern):hover{
+  color: #ffffff !important;
+}
+
+.btn-custom.btn-outlined.btn-flip:hover::before,
+.btn-custom.btn-outlined.btn-flip.btn-flip-bottom:hover::before{
+  top: 0;
+}
+.btn-custom.btn-outlined.btn-flip.btn-flip-left:hover::before,
+.btn-custom.btn-outlined.btn-flip.btn-flip-right:hover::before{
+  left: 0;
+}
+
+
+/*Modern buttons*/
+
+.btn-custom.btn-modern{
+  position: relative;
+  overflow: hidden;
+}
+.btn-custom.btn-modern:not(.btn-flip)::before,
+.btn-custom.btn-modern:not(.btn-flip)::after{
+  position: absolute;
+  content: '';
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  top: -5px;
+  background-color: #fff;
+  transition: all 0.2s linear;
+}
+.btn-custom.btn-modern.btn-modern-angle::before,
+.btn-custom.btn-modern.btn-modern-angle::after{
+  transform: rotate(-45deg);
+}
+.btn-custom.btn-outlined.btn-modern::before,
+.btn-custom.btn-outlined.btn-modern::after{
+  background-color: var(--bgHover);
+}
+
+.btn-custom.btn-modern::before{
+  left: calc(-100% - 10px);
+}
+
+.btn-custom.btn-modern::after{
+  right: calc(-100% - 10px);
+}
+
+.btn-custom.btn-modern:hover::before{
+  left: calc(-100% - 5px);
+}
+.btn-custom.btn-modern.btn-modern-angle:hover::before{
+  left: calc(-100% + 15px);
+}
+
+.btn-custom.btn-modern:hover::after{
+  right: calc(-100% - 5px);
+}
+.btn-custom.btn-modern.btn-modern-angle:hover::after{
+  right: calc(-100% + 15px);
+}
+
+/*Button shadow*/
+.btn-custom.btn-shadow{
+  box-shadow: 0 3px 7px -3px var(--bgColor);
+}
+
+/*Smooth button*/
+.btn-custom.btn-smooth{
+  transition: background 0.2s linear;
+}
+
+/*Small button*/
+.btn-custom.btn-small{
+  --btnSize: 0.5rem 1.5rem;
+  padding: var(--btnSize);
+  font-size: 15px;
+}
+/*Large button*/
+.btn-custom.btn-large{
+  --btnSize: 1rem 2.5rem;
+  padding: var(--btnSize);
+  font-size: 18px;
+}
+
+/*Rounded button*/
+.btn-custom.btn-rounded{
+  border-radius: 6px;
+}
+/*Pill button*/
+.btn-custom.btn-pill{
+  border-radius: 50px;
+}
+/*Full width button*/
+.btn-custom.btn-fill{
+  display: block;
+  width: 100%;
+}
+
