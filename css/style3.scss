@@ -1,0 +1,364 @@
+body{
+  font-family: sans-serif;
+}
+.container{
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+$btnSize: 0.75rem 2rem;
+$bgColor: #ffffff;
+$bgHover: #ffffff;
+$bgActive: #ffffff;
+
+.btn-custom{  
+  display: inline-block;
+  position: relative;
+  background-color: $bgColor;
+  padding: $btnSize;
+  font-size: 16px;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background 0.2s linear;
+
+  /*Small button*/
+  &.btn-small{
+    $btnSize: 0.5rem 1.5rem;
+    padding: $btnSize;
+    font-size: 15px;
+  }
+  /*Large button*/
+  &.btn-large{
+    $btnSize: 1rem 2.5rem;
+    padding: $btnSize;
+    font-size: 18px;
+  }
+
+  /*Rounded button*/
+  &.btn-rounded{
+    border-radius: 6px;
+  }
+  /*Pill button*/
+  &.btn-pill{
+    border-radius: 50px;
+  }
+  /*Full width button*/
+  &.btn-fill{
+    display: block;
+    width: 100%;
+  }
+
+}
+
+/*Red button*/
+.btn-custom.btn-red{
+  $bgColor: #E81313;
+  $bgHover: #d11111;
+  $bgActive: #ae0e0e;
+  background-color: $bgColor;
+
+  &.btn-outlined{
+    background-color: transparent;
+    border-color: $bgHover;
+    color: $bgHover;
+
+    &.btn-flip{
+      &:not(.btn-modern)::before{
+        background-color: $bgHover;
+      }
+    }
+    &.btn-modern::before,
+    &.btn-modern::after{
+      background-color: $bgHover;
+    }
+  }
+  &.btn-hover:hover{
+    background-color: $bgHover;
+    color: #ffffff;
+  }
+  &.btn-active:active{
+    background-color: $bgActive;
+    color: #ffffff;
+  }
+  &.btn-shadow{
+    box-shadow: 0 3px 7px -3px $bgColor;
+  }
+}
+
+
+/*Yellow button*/
+.btn-custom.btn-yellow{
+  $bgColor: #f8d62a;
+  $bgHover: #dfc126;
+  $bgActive: #baa120;
+  background-color: $bgColor;
+
+  &.btn-outlined{
+    background-color: transparent;
+    border-color: $bgHover;
+    color: $bgHover;
+
+    &.btn-flip{
+      &:not(.btn-modern)::before{
+        background-color: $bgHover;
+      }
+    }
+    &.btn-modern::before,
+    &.btn-modern::after{
+      background-color: $bgHover;
+    }
+  }
+  &.btn-hover:hover{
+    background-color: $bgHover;
+    color: #ffffff;
+  }
+  &.btn-active:active{
+    background-color: $bgActive;
+    color: #ffffff;
+  }
+  &.btn-shadow{
+    box-shadow: 0 3px 7px -3px $bgColor;
+  }
+}
+
+
+/*Green button*/
+.btn-custom.btn-green{
+  $bgColor: #13E89D;
+  $bgHover: #0FB97D;
+  $bgActive: #0B8A5D;
+  background-color: $bgColor;
+
+  &.btn-outlined{
+    background-color: transparent;
+    border-color: $bgHover;
+    color: $bgHover;
+
+    &.btn-flip{
+      &:not(.btn-modern)::before{
+        background-color: $bgHover;
+      }
+    }
+    &.btn-modern::before,
+    &.btn-modern::after{
+      background-color: $bgHover;
+    }
+  }
+  &.btn-hover:hover{
+    background-color: $bgHover;
+    color: #ffffff;
+  }
+  &.btn-active:active{
+    background-color: $bgActive;
+    color: #ffffff;
+  }
+  &.btn-shadow{
+    box-shadow: 0 3px 7px -3px $bgColor;
+  }
+}
+
+/*Blue button*/
+.btn-custom.btn-blue{
+  $bgColor: #138FE8;
+  $bgHover: #0F72B9;
+  $bgActive: #0B558A;
+  background-color: $bgColor;
+
+  &.btn-outlined{
+    background-color: transparent;
+    border-color: $bgHover;
+    color: $bgHover;
+
+    &.btn-flip{
+      &:not(.btn-modern)::before{
+        background-color: $bgHover;
+      }
+    }
+    &.btn-modern::before,
+    &.btn-modern::after{
+      background-color: $bgHover;
+    }
+  }
+  &.btn-hover:hover{
+    background-color: $bgHover;
+    color: #ffffff;
+  }
+  &.btn-active:active{
+    background-color: $bgActive;
+    color: #ffffff;
+  }
+  &.btn-shadow{
+    box-shadow: 0 3px 7px -3px $bgColor;
+  }
+}
+
+
+/*Dark button*/
+.btn-custom.btn-dark{
+  $bgColor: #333333;
+  $bgHover: #262626;
+  $bgActive: #0D0D0D;
+  background-color: $bgColor;
+  
+  &.btn-outlined{
+    background-color: transparent;
+    border-color: $bgHover;
+    color: $bgHover;
+
+    &.btn-flip{
+      &:not(.btn-modern)::before{
+        background-color: $bgHover;
+      }
+    }
+    &.btn-modern::before,
+    &.btn-modern::after{
+      background-color: $bgHover;
+    }
+  }
+  &.btn-hover:hover{
+    background-color: $bgHover;
+    color: #ffffff;
+  }
+  &.btn-active:active{
+    background-color: $bgActive;
+    color: #ffffff;
+  }
+  &.btn-shadow{
+    box-shadow: 0 3px 7px -3px $bgColor;
+  }
+}
+
+
+/*Pink button*/
+.btn-custom.btn-pink{
+  $bgColor: #C247FF;
+  $bgHover: #B114FF;
+  $bgActive: #9600E0; 
+  background-color: $bgColor;
+
+  &.btn-outlined{
+    background-color: transparent;
+    border-color: $bgHover;
+    color: $bgHover;
+
+    &.btn-flip{
+      &:not(.btn-modern)::before{
+        background-color: $bgHover;
+      }
+    }
+    &.btn-modern::before,
+    &.btn-modern::after{
+      background-color: $bgHover;
+    }
+  }
+  &.btn-hover:hover{
+    background-color: $bgHover;
+    color: #ffffff;
+  }
+  &.btn-active:active{
+    background-color: $bgActive;
+    color: #ffffff;
+  }
+  &.btn-shadow{
+    box-shadow: 0 3px 7px -3px $bgColor;
+  }
+}
+
+/* Flip buttons*/
+.btn-custom.btn-outlined.btn-flip{
+  overflow: hidden;
+  transition: color 0.2s linear 0.1s;
+
+  &:not(.btn-modern)::before{
+    position: absolute;
+    content: '';
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s linear;
+    z-index: -1;
+  }
+  &.btn-pill::before{
+    border-radius: 50px;
+  }
+  &.btn-flip-left::before{
+    top: 0;
+    left: -100%;
+  }
+  &.btn-flip-right::before{
+    top: 0;
+    left: 100%;
+  }
+  &.btn-flip-bottom::before{
+    top: 100%;
+    left: 0;
+  }
+  &:not(.btn-modern):hover{
+    color: #ffffff !important;
+  }
+  &:hover::before,
+  .btn-flip-bottom:hover::before{
+    top: 0;
+  }
+  &.btn-flip-left:hover::before,
+  &.btn-flip-right:hover::before{
+    left: 0;
+  }
+}
+
+
+/*Modern buttons*/
+
+.btn-custom.btn-modern{
+  position: relative;
+  overflow: hidden;
+
+  &:not(.btn-flip)::before,
+  &:not(.btn-flip)::after{
+    position: absolute;
+    content: '';
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    top: -5px;
+    background-color: #fff;
+    transition: all 0.2s linear;
+  }
+
+  &.btn-modern-angle::before,
+  &.btn-modern-angle::after{
+    transform: rotate(-45deg);
+  }
+
+  &::before{
+    left: calc(-100% - 10px);
+  }
+
+  &::after{
+    right: calc(-100% - 10px);
+  }
+
+  &:hover::before{
+    left: calc(-100% - 5px);
+  }
+
+  &.btn-modern-angle:hover::before{
+    left: calc(-100% + 15px);
+  }
+
+  &:hover::after{
+    right: calc(-100% - 5px);
+  }
+
+  &.btn-modern-angle:hover::after{
+    right: calc(-100% + 15px);
+  }
+
+}

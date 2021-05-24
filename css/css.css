@@ -1,0 +1,291 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.btn-custom {
+  display: inline-block;
+  position: relative;
+  background-color: #ffffff;
+  padding: 0.75rem 2rem;
+  font-size: 16px;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background 0.2s linear;
+  /*Small button*/
+  /*Large button*/
+  /*Rounded button*/
+  /*Pill button*/
+  /*Full width button*/
+}
+.btn-custom.btn-small {
+  padding: 0.5rem 1.5rem;
+  font-size: 15px;
+}
+.btn-custom.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: 18px;
+}
+.btn-custom.btn-rounded {
+  border-radius: 6px;
+}
+.btn-custom.btn-pill {
+  border-radius: 50px;
+}
+.btn-custom.btn-fill {
+  display: block;
+  width: 100%;
+}
+
+/*Red button*/
+.btn-custom.btn-red {
+  background-color: #E81313;
+}
+.btn-custom.btn-red.btn-outlined {
+  background-color: transparent;
+  border-color: #d11111;
+  color: #d11111;
+}
+.btn-custom.btn-red.btn-outlined.btn-flip:not(.btn-modern)::before {
+  background-color: #d11111;
+}
+.btn-custom.btn-red.btn-outlined.btn-modern::before, .btn-custom.btn-red.btn-outlined.btn-modern::after {
+  background-color: #d11111;
+}
+.btn-custom.btn-red.btn-hover:hover {
+  background-color: #d11111;
+  color: #ffffff;
+}
+.btn-custom.btn-red.btn-active:active {
+  background-color: #ae0e0e;
+  color: #ffffff;
+}
+.btn-custom.btn-red.btn-shadow {
+  box-shadow: 0 3px 7px -3px #E81313;
+}
+
+/*Yellow button*/
+.btn-custom.btn-yellow {
+  background-color: #f8d62a;
+}
+.btn-custom.btn-yellow.btn-outlined {
+  background-color: transparent;
+  border-color: #dfc126;
+  color: #dfc126;
+}
+.btn-custom.btn-yellow.btn-outlined.btn-flip:not(.btn-modern)::before {
+  background-color: #dfc126;
+}
+.btn-custom.btn-yellow.btn-outlined.btn-modern::before, .btn-custom.btn-yellow.btn-outlined.btn-modern::after {
+  background-color: #dfc126;
+}
+.btn-custom.btn-yellow.btn-hover:hover {
+  background-color: #dfc126;
+  color: #ffffff;
+}
+.btn-custom.btn-yellow.btn-active:active {
+  background-color: #baa120;
+  color: #ffffff;
+}
+.btn-custom.btn-yellow.btn-shadow {
+  box-shadow: 0 3px 7px -3px #f8d62a;
+}
+
+/*Green button*/
+.btn-custom.btn-green {
+  background-color: #13E89D;
+}
+.btn-custom.btn-green.btn-outlined {
+  background-color: transparent;
+  border-color: #0FB97D;
+  color: #0FB97D;
+}
+.btn-custom.btn-green.btn-outlined.btn-flip:not(.btn-modern)::before {
+  background-color: #0FB97D;
+}
+.btn-custom.btn-green.btn-outlined.btn-modern::before, .btn-custom.btn-green.btn-outlined.btn-modern::after {
+  background-color: #0FB97D;
+}
+.btn-custom.btn-green.btn-hover:hover {
+  background-color: #0FB97D;
+  color: #ffffff;
+}
+.btn-custom.btn-green.btn-active:active {
+  background-color: #0B8A5D;
+  color: #ffffff;
+}
+.btn-custom.btn-green.btn-shadow {
+  box-shadow: 0 3px 7px -3px #13E89D;
+}
+
+/*Blue button*/
+.btn-custom.btn-blue {
+  background-color: #138FE8;
+}
+.btn-custom.btn-blue.btn-outlined {
+  background-color: transparent;
+  border-color: #0F72B9;
+  color: #0F72B9;
+}
+.btn-custom.btn-blue.btn-outlined.btn-flip:not(.btn-modern)::before {
+  background-color: #0F72B9;
+}
+.btn-custom.btn-blue.btn-outlined.btn-modern::before, .btn-custom.btn-blue.btn-outlined.btn-modern::after {
+  background-color: #0F72B9;
+}
+.btn-custom.btn-blue.btn-hover:hover {
+  background-color: #0F72B9;
+  color: #ffffff;
+}
+.btn-custom.btn-blue.btn-active:active {
+  background-color: #0B558A;
+  color: #ffffff;
+}
+.btn-custom.btn-blue.btn-shadow {
+  box-shadow: 0 3px 7px -3px #138FE8;
+}
+
+/*Dark button*/
+.btn-custom.btn-dark {
+  background-color: #333333;
+}
+.btn-custom.btn-dark.btn-outlined {
+  background-color: transparent;
+  border-color: #262626;
+  color: #262626;
+}
+.btn-custom.btn-dark.btn-outlined.btn-flip:not(.btn-modern)::before {
+  background-color: #262626;
+}
+.btn-custom.btn-dark.btn-outlined.btn-modern::before, .btn-custom.btn-dark.btn-outlined.btn-modern::after {
+  background-color: #262626;
+}
+.btn-custom.btn-dark.btn-hover:hover {
+  background-color: #262626;
+  color: #ffffff;
+}
+.btn-custom.btn-dark.btn-active:active {
+  background-color: #0D0D0D;
+  color: #ffffff;
+}
+.btn-custom.btn-dark.btn-shadow {
+  box-shadow: 0 3px 7px -3px #333333;
+}
+
+/*Pink button*/
+.btn-custom.btn-pink {
+  background-color: #C247FF;
+}
+.btn-custom.btn-pink.btn-outlined {
+  background-color: transparent;
+  border-color: #B114FF;
+  color: #B114FF;
+}
+.btn-custom.btn-pink.btn-outlined.btn-flip:not(.btn-modern)::before {
+  background-color: #B114FF;
+}
+.btn-custom.btn-pink.btn-outlined.btn-modern::before, .btn-custom.btn-pink.btn-outlined.btn-modern::after {
+  background-color: #B114FF;
+}
+.btn-custom.btn-pink.btn-hover:hover {
+  background-color: #B114FF;
+  color: #ffffff;
+}
+.btn-custom.btn-pink.btn-active:active {
+  background-color: #9600E0;
+  color: #ffffff;
+}
+.btn-custom.btn-pink.btn-shadow {
+  box-shadow: 0 3px 7px -3px #C247FF;
+}
+
+/* Flip buttons*/
+.btn-custom.btn-outlined.btn-flip {
+  overflow: hidden;
+  transition: color 0.2s linear 0.1s;
+}
+.btn-custom.btn-outlined.btn-flip:not(.btn-modern)::before {
+  position: absolute;
+  content: "";
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s linear;
+  z-index: -1;
+}
+.btn-custom.btn-outlined.btn-flip.btn-pill::before {
+  border-radius: 50px;
+}
+.btn-custom.btn-outlined.btn-flip.btn-flip-left::before {
+  top: 0;
+  left: -100%;
+}
+.btn-custom.btn-outlined.btn-flip.btn-flip-right::before {
+  top: 0;
+  left: 100%;
+}
+.btn-custom.btn-outlined.btn-flip.btn-flip-bottom::before {
+  top: 100%;
+  left: 0;
+}
+.btn-custom.btn-outlined.btn-flip:not(.btn-modern):hover {
+  color: #ffffff !important;
+}
+.btn-custom.btn-outlined.btn-flip:hover::before,
+.btn-custom.btn-outlined.btn-flip .btn-flip-bottom:hover::before {
+  top: 0;
+}
+.btn-custom.btn-outlined.btn-flip.btn-flip-left:hover::before, .btn-custom.btn-outlined.btn-flip.btn-flip-right:hover::before {
+  left: 0;
+}
+
+/*Modern buttons*/
+.btn-custom.btn-modern {
+  position: relative;
+  overflow: hidden;
+}
+.btn-custom.btn-modern:not(.btn-flip)::before, .btn-custom.btn-modern:not(.btn-flip)::after {
+  position: absolute;
+  content: "";
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  top: -5px;
+  background-color: #fff;
+  transition: all 0.2s linear;
+}
+.btn-custom.btn-modern.btn-modern-angle::before, .btn-custom.btn-modern.btn-modern-angle::after {
+  transform: rotate(-45deg);
+}
+.btn-custom.btn-modern::before {
+  left: calc(-100% - 10px);
+}
+.btn-custom.btn-modern::after {
+  right: calc(-100% - 10px);
+}
+.btn-custom.btn-modern:hover::before {
+  left: calc(-100% - 5px);
+}
+.btn-custom.btn-modern.btn-modern-angle:hover::before {
+  left: calc(-100% + 15px);
+}
+.btn-custom.btn-modern:hover::after {
+  right: calc(-100% - 5px);
+}
+.btn-custom.btn-modern.btn-modern-angle:hover::after {
+  right: calc(-100% + 15px);
+}
+
+/*# sourceMappingURL=css.css.map */
